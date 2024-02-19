@@ -9,20 +9,29 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int A, B, C, D;
+		int cod1, cod2, quantity1, quantity2;
+		double price1, price2, totalValue;
 		
-		System.out.println("Digite o valor de A: ");		
-		A = sc.nextInt();
-		System.out.println("Digite o valor de B: ");		
-		B = sc.nextInt();
-		System.out.println("Digite o valor de C: ");		
-		C = sc.nextInt();
-		System.out.println("Digite o valor de D: ");		
-		D = sc.nextInt();
+		System.out.println(" Codigo do primeiro produtos");
+		cod1 = sc.nextInt();
+		System.out.println("quantity product: ");
+		quantity1 = sc.nextInt();
+		System.out.println("price one product: ");
+		price1 = sc.nextDouble();
 		
-		int sum = (A * B - C * D);
 		
-		System.out.println("A diferença é de: " + sum);
+		System.out.println(" Codigo do segundo produtos");
+		cod2 = sc.nextInt();
+		System.out.println("quantity product: ");
+		quantity2 = sc.nextInt();
+		System.out.println("price two product: ");
+		price2 = sc.nextDouble();
+		
+		totalValue = (quantity1 * price1) + (quantity2 * price2);
+		
+		System.out.println("o valor total a pagar e de: " + totalValue);
+		
+		
 		
 		
 		
