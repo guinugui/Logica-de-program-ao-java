@@ -9,15 +9,16 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
+		double PI = 3.14159;
 		
-		System.out.println("Digite um numero: ");
-		double primeiro = sc.nextDouble();
-		System.out.println("Digite outro numero: ");
-		double segundo = sc.nextDouble();
 		
-		System.out.println("a soma desses numeros e de: ");
-		double sum = primeiro + segundo;
-		System.out.println("A soma de " + primeiro + " + " + segundo + " é de: " + sum);
+		System.out.println("Digite o valor do raio: ");
+		double raio = sc.nextDouble();
+		
+		double valorRaio = raio * raio;
+		
+		double areaCirculo = PI * valorRaio;
+		System.out.printf("O valor da area do circulo e de: " + areaCirculo);
 		
 		
 		
