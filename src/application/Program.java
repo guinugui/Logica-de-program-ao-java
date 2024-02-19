@@ -9,17 +9,20 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		double PI = 3.14159;
+		int A, B, C, D;
 		
+		System.out.println("Digite o valor de A: ");		
+		A = sc.nextInt();
+		System.out.println("Digite o valor de B: ");		
+		B = sc.nextInt();
+		System.out.println("Digite o valor de C: ");		
+		C = sc.nextInt();
+		System.out.println("Digite o valor de D: ");		
+		D = sc.nextInt();
 		
-		System.out.println("Digite o valor do raio: ");
-		double raio = sc.nextDouble();
+		int sum = (A * B - C * D);
 		
-		double valorRaio = raio * raio;
-		
-		double areaCirculo = PI * valorRaio;
-		System.out.printf("O valor da area do circulo e de: " + areaCirculo);
-		
+		System.out.println("A diferença é de: " + sum);
 		
 		
 		
