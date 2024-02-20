@@ -9,16 +9,18 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int number;
+		int number1, number2;
 		
-		System.out.println(" Digite um numero: ");
-		number = sc.nextInt();
+		System.out.println(" Digite um numero 1: ");
+		number1 = sc.nextInt();
+		System.out.println(" Digite um numero 2: ");
+		number2 = sc.nextInt();
 		
-		if(number % 2 == 0) {
-			System.out.println("ESTE NUMERO E PAR");
+		if(number1 % number2 == 0 || number2 % number1 == 0) {
+			System.out.println("ESTE NUMERO SAO MULTIPLOS");
 		}
 		else {
-			System.out.println("ESTE NUMERO E IMPAR");
+			System.out.println("ESTE NUMERO NAO SAO MULTIPLOS");
 		}
 		
 		
