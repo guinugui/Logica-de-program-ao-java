@@ -14,11 +14,11 @@ public class Program {
 		System.out.println(" Digite um numero: ");
 		number = sc.nextInt();
 		
-		if(number < 0) {
-			System.out.println("ESTE NUMERO E NEGATIVO");
+		if(number % 2 == 0) {
+			System.out.println("ESTE NUMERO E PAR");
 		}
 		else {
-			System.out.println("ESTE NUMERO E POSITIVO");
+			System.out.println("ESTE NUMERO E IMPAR");
 		}
 		
 		
