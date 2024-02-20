@@ -9,25 +9,28 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int inicio, fim, duracao;
-		
-		System.out.println(" Digite um numero 1: ");
-		inicio = sc.nextInt();
-		System.out.println(" Digite um numero 2: ");
-		fim = sc.nextInt();
-		
-		if(inicio < fim) {
-			duracao = fim - inicio;
+		int number, quantity;
+
+		System.out.println("quanto do numero do pedido: ");
+		number = sc.nextInt();
+		System.out.println("quantas unidades : ");
+		quantity = sc.nextInt();
+
+		double total;
+		if (number == 1) {
+			total = quantity * 4.0;
+		} else if (number == 2) {
+			total = quantity * 4.5;
+		} else if (number == 3) {
+			total = quantity * 5.0;
+		} else if (number == 4) {
+			total = quantity * 2.0;
+		} else {
+			total = quantity * 1.5;
 		}
-		else {
-			duracao = 24 - inicio + fim;
-		}
-		
-		System.out.println("o jogo durou " + duracao + " horas!"); 
-		
-		
-		
-		
+
+		System.out.println("o valor total fica: " + total);
+
 		sc.close();
 
 	}
