@@ -9,22 +9,28 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int number;
+		double A, B;
 
 		System.out.println("Digite um numero: ");
-		number = sc.nextInt();
+		A = sc.nextDouble();
+		System.out.println("Digite um numero: ");
+		B = sc.nextDouble();
 
 		
-		if (number <= 0.0 || number >=100 ) {
-			System.out.println("Fora de intervalor");
-		} else if (number <= 25) {
-			System.out.println("Intervalor entr (0, 25]");
-		} else if (number <= 50) {
-			System.out.println("Intervalor entr (25, 50]");
-		} else if (number <= 75) {
-			System.out.println("Intervalor entr (50, 75]");
+		if (A == 0.0 && B == 0 ) {
+			System.out.println("Origem");
+		} else if (A == 0) {
+			System.out.println("Eixo B");
+		} else if (B == 0) {
+			System.out.println("Eixo A");
+		} else if (A > 0 && B > 0) {
+			System.out.println("Q1");
+		} else if (A < 0 && B > 0) {
+			System.out.println("Q2");
+		} else if (A < 0 && B < 0) {
+			System.out.println("Q3");
 		} else {
-			System.out.println("Intervalor entr (75, 100]");
+			System.out.println("Q4");
 		}
 
 		sc.close();
