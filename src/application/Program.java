@@ -9,27 +9,23 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int number, quantity;
+		int number;
 
-		System.out.println("quanto do numero do pedido: ");
+		System.out.println("Digite um numero: ");
 		number = sc.nextInt();
-		System.out.println("quantas unidades : ");
-		quantity = sc.nextInt();
 
-		double total;
-		if (number == 1) {
-			total = quantity * 4.0;
-		} else if (number == 2) {
-			total = quantity * 4.5;
-		} else if (number == 3) {
-			total = quantity * 5.0;
-		} else if (number == 4) {
-			total = quantity * 2.0;
+		
+		if (number <= 0.0 || number >=100 ) {
+			System.out.println("Fora de intervalor");
+		} else if (number <= 25) {
+			System.out.println("Intervalor entr (0, 25]");
+		} else if (number <= 50) {
+			System.out.println("Intervalor entr (25, 50]");
+		} else if (number <= 75) {
+			System.out.println("Intervalor entr (50, 75]");
 		} else {
-			total = quantity * 1.5;
+			System.out.println("Intervalor entr (75, 100]");
 		}
-
-		System.out.println("o valor total fica: " + total);
 
 		sc.close();
 
