@@ -9,36 +9,33 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int x, y;
-		
-		System.out.println("Digite x: ");
-		x = sc.nextInt();
-		System.out.println("Digite x: ");
-		y = sc.nextInt();
+		int alcool = 0;
+		int gasolina = 0;
+		int diesel = 0;
 		
 		
+		System.out.println("qual tipo voce quer? ");
+		int tipo = sc.nextInt();
 		
-		while(x != 0 && y != 0) {
-			if(x > 0 && y > 0) {
-				System.out.println("primeiro");
+		while(tipo != 4) {
+			if(tipo == 1) {
+				alcool = alcool + 1;
 			}
-			else if(x < 0 && y > 0) {
-				System.out.println("segundo");
+			else if(tipo == 2) {
+				gasolina = gasolina + 1;
 			}
-			else if(x < 0 && y < 0) {
-				System.out.println("terceiro");
+			else if(tipo == 3) {
+				diesel = diesel + 1;
 			}
-			else if(x > 0 && y < 0) {
-				System.out.println("quarto");
-			}
-			System.out.println("Digite x: ");
-			x = sc.nextInt();
-			System.out.println("Digite Y: ");
-			y = sc.nextInt();
-		
+			
+			tipo = sc.nextInt();
+	
 		}
 
-		System.out.println("Encerrado!");
+		System.out.println("MUITO OBRIGADO");
+		System.out.println("Alcool: " + alcool);
+		System.out.println("Gasolina: " + gasolina);
+		System.out.println("Diesel: " + diesel);
 		
 
 
