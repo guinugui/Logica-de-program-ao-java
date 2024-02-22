@@ -9,29 +9,18 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		double A, B;
-
-		System.out.println("Digite um numero: ");
-		A = sc.nextDouble();
-		System.out.println("Digite um numero: ");
-		B = sc.nextDouble();
-
+		int senha;
 		
-		if (A == 0.0 && B == 0 ) {
-			System.out.println("Origem");
-		} else if (A == 0) {
-			System.out.println("Eixo B");
-		} else if (B == 0) {
-			System.out.println("Eixo A");
-		} else if (A > 0 && B > 0) {
-			System.out.println("Q1");
-		} else if (A < 0 && B > 0) {
-			System.out.println("Q2");
-		} else if (A < 0 && B < 0) {
-			System.out.println("Q3");
-		} else {
-			System.out.println("Q4");
+		System.out.println("Digite a senha correta");
+		senha = sc.nextInt();
+		while(senha != 2002) {
+			System.out.println("senha incorreta");
+			senha = sc.nextInt();
 		}
+
+		System.out.println("Acesso permitido");
+		
+
 
 		sc.close();
 
