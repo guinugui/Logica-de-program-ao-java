@@ -9,25 +9,24 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int n; int in = 0; int out = 0;
+		int n;
 
 		System.out.println("Digite um numero: ");
 		n = sc.nextInt();
 
 		for (int i = 0; i < n; i++) {
 			
-			int x = sc.nextInt();
+			double x = sc.nextDouble();
+			double y = sc.nextDouble();
+			double z = sc.nextDouble();
 			
-			if (x >= 10 && x <= 20) {
-				in = in + 1;
-			}else {
-				out = out + 1;
-			}
-
+			double media = (x * 2 + y * 3 + z * 5) / 10.0;
+			
+		
+			System.out.printf("%.1f%n", media);
+			
 		}
 		
-		System.out.println(in + " in");
-		System.out.println(out + " out");
 		
 		sc.close();
 
