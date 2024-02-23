@@ -18,12 +18,14 @@ public class Program {
 			
 			double x = sc.nextDouble();
 			double y = sc.nextDouble();
-			double z = sc.nextDouble();
 			
-			double media = (x * 2 + y * 3 + z * 5) / 10.0;
-			
-		
-			System.out.printf("%.1f%n", media);
+			double divisao = (double)x / y;
+			if(y == 0.0){
+				System.out.println("divisao impossivel");
+			}else {
+				System.out.println(divisao);
+				
+			}
 			
 		}
 		
