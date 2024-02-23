@@ -11,27 +11,18 @@ public class Program {
 
 		int n;
 
-		System.out.println("Digite um numero: ");
+		System.out.println("quantas vezes: ");
 		n = sc.nextInt();
-
-		for (int i = 0; i < n; i++) {
-			
-			double x = sc.nextDouble();
-			double y = sc.nextDouble();
-			
-			double divisao = (double)x / y;
-			if(y == 0.0){
-				System.out.println("divisao impossivel");
-			}else {
-				System.out.println(divisao);
-				
-			}
-			
+		
+		int fat = 1;
+		
+		
+		for (int i = 1; i <= n; i++) {
+			fat = fat * i;
 		}
-		
-		
-		sc.close();
+		System.out.println(fat);
 
+		sc.close();
 	}
 
 }
