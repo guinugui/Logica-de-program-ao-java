@@ -14,13 +14,12 @@ public class Program {
 		System.out.println("quantas vezes: ");
 		n = sc.nextInt();
 		
-		int fat = 1;
 		
-		
-		for (int i = 1; i <= n; i++) {
-			fat = fat * i;
+		for (int i=1; i<=n; i++) {
+			if (n % i == 0) {
+				System.out.println(i);
+			}
 		}
-		System.out.println(fat);
 
 		sc.close();
 	}
