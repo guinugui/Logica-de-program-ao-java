@@ -9,17 +9,26 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int number;
+		int n; int in = 0; int out = 0;
 
 		System.out.println("Digite um numero: ");
-		number = sc.nextInt();
+		n = sc.nextInt();
 
-		for (int i = 0; i <= number; i++) {
-			if (i % 2 != 0) {
-				System.out.println(i);
+		for (int i = 0; i < n; i++) {
+			
+			int x = sc.nextInt();
+			
+			if (x >= 10 && x <= 20) {
+				in = in + 1;
+			}else {
+				out = out + 1;
 			}
 
 		}
+		
+		System.out.println(in + " in");
+		System.out.println(out + " out");
+		
 		sc.close();
 
 	}
