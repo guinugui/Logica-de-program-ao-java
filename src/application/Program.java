@@ -9,36 +9,17 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int alcool = 0;
-		int gasolina = 0;
-		int diesel = 0;
-		
-		
-		System.out.println("qual tipo voce quer? ");
-		int tipo = sc.nextInt();
-		
-		while(tipo != 4) {
-			if(tipo == 1) {
-				alcool = alcool + 1;
+		int number;
+
+		System.out.println("Digite um numero: ");
+		number = sc.nextInt();
+
+		for (int i = 0; i <= number; i++) {
+			if (i % 2 != 0) {
+				System.out.println(i);
 			}
-			else if(tipo == 2) {
-				gasolina = gasolina + 1;
-			}
-			else if(tipo == 3) {
-				diesel = diesel + 1;
-			}
-			
-			tipo = sc.nextInt();
-	
+
 		}
-
-		System.out.println("MUITO OBRIGADO");
-		System.out.println("Alcool: " + alcool);
-		System.out.println("Gasolina: " + gasolina);
-		System.out.println("Diesel: " + diesel);
-		
-
-
 		sc.close();
 
 	}
